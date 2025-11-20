@@ -1,4 +1,336 @@
-!
-  </h1>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Web Developer - Jackie Chan: Sang Legenda Aksi Lengkap</title>
+    <!-- Memuat Tailwind CSS untuk styling profesional dan responsif -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Inter untuk keterbacaan modern -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .section-title {
+            position: relative;
+            padding-bottom: 0.5rem;
+            display: inline-block;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 75%;
+            height: 4px;
+            background-color: #fca5a5; /* Rose-300 for emphasis */
+            border-radius: 9999px;
+        }
+        .timeline-item:nth-child(even) .timeline-dot {
+            left: auto;
+            right: -2.5rem;
+        }
+        @media (max-width: 767px) {
+            .timeline-item {
+                justify-content: start !important;
+            }
+            .timeline-item .order-1 {
+                width: 90% !important;
+            }
+            .timeline-item .w-5/12 {
+                width: 100% !important;
+            }
+            .timeline-item .timeline-dot {
+                left: -1.5rem !important;
+                right: auto !important;
+                transform: translateX(0);
+            }
+            .timeline-item:nth-child(even) .timeline-dot {
+                left: -1.5rem !important;
+                right: auto !important;
+            }
+            .wrap .border {
+                left: 1.25rem !important; /* Move the center line to the left */
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100">
+
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-50 bg-gray-800 bg-opacity-95 shadow-lg backdrop-blur-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <span class="text-2xl font-bold text-rose-400">J.C. LEGACY</span>
+                </div>
+                <div class="flex space-x-2 sm:space-x-4">
+                    <a href="#biografi" class="text-gray-300 hover:text-rose-400 px-1 sm:px-3 py-2 rounded-md text-sm font-medium transition duration-300">Bio</a>
+                    <a href="#kisah" class="text-gray-300 hover:text-rose-400 px-1 sm:px-3 py-2 rounded-md text-sm font-medium transition duration-300">Kisah</a>
+                    <a href="#karakter" class="text-gray-300 hover:text-rose-400 px-1 sm:px-3 py-2 rounded-md text-sm font-medium transition duration-300">Sifat</a>
+                    <a href="#filmografi" class="text-gray-300 hover:text-rose-400 px-1 sm:px-3 py-2 rounded-md text-sm font-medium transition duration-300">Film</a>
+                    <a href="#kesan" class="text-gray-300 hover:text-rose-400 px-1 sm:px-3 py-2 rounded-md text-sm font-medium transition duration-300">Pesan</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section: Gambar Karakter Jackie Chan -->
+    <header class="relative overflow-hidden pt-16 pb-24 sm:pt-24 sm:pb-32">
+        <div class="absolute inset-0 bg-black opacity-40"></div>
+        
+        <!-- Kriteria: Gambar Karakter Jackie Chan (Placeholder) -->
+        <div class="absolute inset-0 z-0 flex items-center justify-center opacity-70">
+            <img src="https://placehold.co/1920x1080/1f2937/d1d5db?text=GAMBAR+KARAKTER+JACKIE+CHAN+AKSI" 
+                 alt="" 
+                 class="w-full h-full object-cover blur-sm"
+                 onerror="this.onerror=null;this.src='https://placehold.co/1920x1080/1f2937/d1d5db?text=GAMBAR+KARAKTER+JACKIE+CHAN+AKSI';"
+            >
+        </div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10 text-center">
+            <div class="mx-auto max-w-4xl pt-10">
+                <h1 class="text-5xl sm:text-7xl font-extrabold tracking-tight text-white drop-shadow-lg">
+                    JACKIE CHAN
+                </h1>
+                <p class="mt-6 text-xl text-gray-200 drop-shadow-md">
+                    Sang Legenda Aksi, Komedi, dan Sutradara Film.
+                </p>
+                
+                <!-- Kriteria: Tempat Lahir, Tanggal Lahir, Tanggal Kematian -->
+                <div id="biografi" class="mt-10 p-4 sm:p-6 bg-gray-700 bg-opacity-70 rounded-xl shadow-2xl inline-block">
+                    <p class="text-lg font-medium text-rose-300 mb-2">Biografi Dasar</p>
+                    <div class="text-left space-y-1 text-sm sm:text-base">
+                        <p><strong>Nama Lahir:</strong> Chan Kong-sang (陳港生)</p>
+                        <p><strong>Tanggal Lahir:</strong> 7 April 1954</p>
+                        <p><strong>Tempat Lahir:</strong> Victoria Peak, Hong Kong, China</p>
+                        <p><strong>Status:</strong> Hidup dan Masih Aktif dalam Industri Film</p>
+                    </div>
+                </div>
+
+                <div class="mt-8">
+                    <a href="#kisah" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-full shadow-lg text-gray-900 bg-rose-400 hover:bg-rose-500 transition duration-300 transform hover:scale-105">
+                        Telusuri Kisahnya &rarr;
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+
+        <!-- Section 1: Kisah dan Alur Cerita (dari awal sampai akhir) -->
+        <section id="kisah" class="mb-24">
+            <h2 class="section-title text-4xl font-bold mb-12">Alur Kisah Karir</h2>
+            
+            <!-- Timeline Section for Mobile and Desktop -->
+            <div class="relative wrap overflow-hidden p-0 sm:p-10 h-full">
+                <div class="border-2-2 absolute border-opacity-20 border-rose-400 h-full border hidden md:block" style="left: 50%;"></div>
+                <div class="border-2-2 absolute border-opacity-20 border-rose-400 h-full border block md:hidden" style="left: 1.25rem;"></div>
+
+                <!-- Item Timeline 1: Masa Kecil dan Pendidikan -->
+                <div class="mb-8 flex justify-between items-center w-full right-timeline timeline-item">
+                    <div class="order-1 w-5/12 hidden md:block"></div>
+                    <div class="z-20 flex items-center order-1 bg-rose-400 shadow-xl w-10 h-10 rounded-full timeline-dot" style="left: -25px;">
+                        <h1 class="mx-auto font-semibold text-lg text-gray-900">1</h1>
+                    </div>
+                    <div class="order-1 bg-gray-800 rounded-xl shadow-xl w-full md:w-5/12 px-6 py-4">
+                        <h3 class="mb-3 font-bold text-rose-400 text-xl">Masa Akademi (1954 - 1970)</h3>
+                        <p class="text-sm leading-snug tracking-wide text-gray-300">
+                            Lahir dari keluarga miskin. Pada usia 7 tahun, ia dimasukkan ke China Drama Academy. Di bawah didikan keras Master Yu Jim-yuen, ia menghabiskan satu dekade mempelajari opera Peking, akrobatik, drama, dan seni bela diri, menjadi bagian dari *Seven Little Fortunes*.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item Timeline 2: Awal Karir dan Stuntman -->
+                <div class="mb-8 flex justify-between items-center w-full left-timeline timeline-item">
+                    <div class="order-1 w-full md:w-5/12 text-left md:text-right">
+                        <div class="order-1 bg-gray-800 rounded-xl shadow-xl px-6 py-4">
+                            <h3 class="mb-3 font-bold text-rose-400 text-xl">Pencarian Jati Diri (1970an)</h3>
+                            <p class="text-sm leading-snug tracking-wide text-gray-300">
+                                Beralih menjadi stuntman dan pemeran pengganti di film-film Bruce Lee. Ia sempat mencoba meniru gaya Bruce Lee namun gagal di film pertamanya. Ia kemudian menyadari ia harus menciptakan gaya uniknya sendiri.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="z-20 flex items-center order-1 bg-rose-400 shadow-xl w-10 h-10 rounded-full timeline-dot" style="right: -25px;">
+                        <h1 class="mx-auto font-semibold text-lg text-gray-900">2</h1>
+                    </div>
+                    <div class="order-1 w-5/12 hidden md:block"></div>
+                </div>
+
+                <!-- Item Timeline 3: Era Terobosan Komedi Aksi -->
+                <div class="mb-8 flex justify-between items-center w-full right-timeline timeline-item">
+                    <div class="order-1 w-5/12 hidden md:block"></div>
+                    <div class="z-20 flex items-center order-1 bg-rose-400 shadow-xl w-10 h-10 rounded-full timeline-dot" style="left: -25px;">
+                        <h1 class="mx-auto font-semibold text-lg text-gray-900">3</h1>
+                    </div>
+                    <div class="order-1 bg-gray-800 rounded-xl shadow-xl w-full md:w-5/12 px-6 py-4">
+                        <h3 class="mb-3 font-bold text-rose-400 text-xl">Penemuan Gaya Khas (1978 - 1980an)</h3>
+                        <p class="text-sm leading-snug tracking-wide text-gray-300">
+                            Menciptakan terobosan dengan genre Komedi Aksi Kung Fu yang menggunakan *slapstick*, ekspresi wajah, dan penggunaan properti yang inovatif. Film *Snake in the Eagle's Shadow* dan *Drunken Master* meledak di pasaran Asia.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Item Timeline 4: Puncak Aksi Hong Kong -->
+                <div class="mb-8 flex justify-between items-center w-full left-timeline timeline-item">
+                    <div class="order-1 w-full md:w-5/12 text-left md:text-right">
+                        <div class="order-1 bg-gray-800 rounded-xl shadow-xl px-6 py-4">
+                            <h3 class="mb-3 font-bold text-rose-400 text-xl">Master Stunt (1980an - 1990an)</h3>
+                            <p class="text-sm leading-snug tracking-wide text-gray-300">
+                                Masa keemasan Hong Kong. Jackie menyutradarai, membintangi, dan mengkoreografi adegan aksi gila-gilaan, menolak pemeran pengganti. Film seperti *Police Story*, *Project A*, dan *Armour of God* mendunia dan menghasilkan *bloopers* ikonik di akhir film.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="z-20 flex items-center order-1 bg-rose-400 shadow-xl w-10 h-10 rounded-full timeline-dot" style="right: -25px;">
+                        <h1 class="mx-auto font-semibold text-lg text-gray-900">4</h1>
+                    </div>
+                    <div class="order-1 w-5/12 hidden md:block"></div>
+                </div>
+
+                <!-- Item Timeline 5: Ekspansi Hollywood dan Warisan -->
+                <div class="mb-8 flex justify-between items-center w-full right-timeline timeline-item">
+                    <div class="order-1 w-5/12 hidden md:block"></div>
+                    <div class="z-20 flex items-center order-1 bg-rose-400 shadow-xl w-10 h-10 rounded-full timeline-dot" style="left: -25px;">
+                        <h1 class="mx-auto font-semibold text-lg text-gray-900">5</h1>
+                    </div>
+                    <div class="order-1 bg-gray-800 rounded-xl shadow-xl w-full md:w-5/12 px-6 py-4">
+                        <h3 class="mb-3 font-bold text-rose-400 text-xl">Ikon Global & Filantropi (2000an - Sekarang)</h3>
+                        <p class="text-sm leading-snug tracking-wide text-gray-300">
+                            Meraih sukses besar di Amerika Serikat melalui film seperti *Rush Hour* dan *Shanghai Noon*. Mendapatkan penghargaan Oscar kehormatan pada tahun 2016. Fokus pada proyek yang lebih mendalam dan, yang terpenting, menjalankan misi kemanusiaan melalui yayasannya.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        
+        <!-- Section 2: Karakter dan Sifat Jackie Chan -->
+        <section id="karakter" class="mb-24">
+            <h2 class="section-title text-4xl font-bold mb-12">Karakter & Sifat Khas</h2>
+            <p class="text-lg text-gray-400 mb-8">
+                Jackie Chan dikenal karena kepribadiannya yang berbeda di layar dan di belakang layar, memadukan keberanian dengan kerendahan hati.
+            </p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Sifat 1: Keberanian Mutlak -->
+                <div class="bg-gray-800 p-6 rounded-xl shadow-xl border-t-4 border-rose-400 transform hover:scale-105 transition duration-300">
+                    <div class="text-4xl text-rose-400 mb-4">&#9889;</div> 
+                    <h3 class="text-xl font-semibold mb-2">Keberanian Ekstrem</h3>
+                    <p class="text-gray-400 text-sm">
+                        Ia menolak pemeran pengganti. Keberaniannya untuk melakukan aksi yang mematahkan tulang, seperti melompat dari menara atau bergelantungan di bus, merupakan ciri khas tak tertandingi.
+                    </p>
+                </div>
+
+                <!-- Sifat 2: Kerendahan Hati (Karakter Film) -->
+                <div class="bg-gray-800 p-6 rounded-xl shadow-xl border-t-4 border-rose-400 transform hover:scale-105 transition duration-300">
+                    <div class="text-4xl text-rose-400 mb-4">&#128522;</div> 
+                    <h3 class="text-xl font-semibold mb-2">Pahlawan Humanis</h3>
+                    <p class="text-gray-400 text-sm">
+                        Karakternya di film sering kali bukan jagoan sempurna, melainkan orang biasa yang canggung dan menggunakan kecerdikan (properti) untuk menang. Ini membuatnya mudah dicintai.
+                    </p>
+                </div>
+
+                <!-- Sifat 3: Kreativitas dan Inovasi -->
+                <div class="bg-gray-800 p-6 rounded-xl shadow-xl border-t-4 border-rose-400 transform hover:scale-105 transition duration-300">
+                    <div class="text-4xl text-rose-400 mb-4">&#128295;</div> 
+                    <h3 class="text-xl font-semibold mb-2">Jenius Koreografi</h3>
+                    <p class="text-gray-400 text-sm">
+                        Mampu mengubah lingkungan sekitar menjadi arena pertarungan yang inventif. Ia adalah sutradara yang visioner, selalu mencari cara baru untuk menari dalam pertempuran.
+                    </p>
+                </div>
+
+                <!-- Sifat 4: Filantropi dan Tanggung Jawab Sosial -->
+                <div class="bg-gray-800 p-6 rounded-xl shadow-xl border-t-4 border-rose-400 transform hover:scale-105 transition duration-300">
+                    <div class="text-4xl text-rose-400 mb-4">&#128154;</div> 
+                    <h3 class="text-xl font-semibold mb-2">Semangat Amal</h3>
+                    <p class="text-gray-400 text-sm">
+                        Di kehidupan nyata, ia adalah seorang filantropis yang mendedikasikan waktu dan kekayaannya untuk berbagai yayasan amal di seluruh dunia, terutama untuk pendidikan anak-anak.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Section 3: Tempat Film dan Perannya (Filmografi Pilihan) -->
+        <section id="filmografi" class="mb-24">
+            <h2 class="section-title text-4xl font-bold mb-12">Tempat Film & Peran Kunci</h2>
+
+            <div class="space-y-10">
+                
+                <!-- Film 1: Police Story -->
+                <div class="p-6 bg-gray-800 rounded-xl shadow-2xl flex flex-col md:flex-row gap-6">
+                    <img src="https://placehold.co/200x150/374151/fca5a5?text=POLICE+STORY" alt="" class="w-full md:w-1/3 h-auto object-cover rounded-lg">
+                    <div class="md:w-2/3">
+                        <h3 class="text-2xl font-bold text-rose-400 mb-2">Police Story (1985)</h3>
+                        <p class="text-gray-300 mb-2 font-medium">Peran: Inspektur Kevin Chan Ka-Kui</p>
+                        <p class="text-sm text-gray-400">
+                            <span class="font-semibold text-rose-300">Tempat Kunci:</span> **Hong Kong**. Film ini terkenal dengan adegan-adegan yang melintasi jalanan dan pusat perbelanjaan, khususnya aksi ikonik Jackie meluncur turun tiang di mall. Ia berperan sebagai polisi yang harus membersihkan namanya sambil melawan kartel narkoba.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Film 2: Drunken Master -->
+                <div class="p-6 bg-gray-800 rounded-xl shadow-2xl flex flex-col md:flex-row gap-6">
+                    <img src="https://placehold.co/200x150/374151/fca5a5?text=DRUNKEN+MASTER" alt="" class="w-full md:w-1/3 h-auto object-cover rounded-lg">
+                    <div class="md:w-2/3">
+                        <h3 class="text-2xl font-bold text-rose-400 mb-2">Drunken Master (1978)</h3>
+                        <p class="text-gray-300 mb-2 font-medium">Peran: Wong Fei-hung</p>
+                        <p class="text-sm text-gray-400">
+                            <span class="font-semibold text-rose-300">Tempat Kunci:</span> **Pedalaman Tiongkok**. Mengambil latar era Republik Tiongkok, film ini menunjukkan penggunaan ilmu bela diri kuno *Zui Quan* (Tinju Mabuk). Perannya adalah seorang pemuda pemberontak yang terpaksa mempelajari gaya bertarung unik dari gurunya.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Film 3: Rush Hour -->
+                <div class="p-6 bg-gray-800 rounded-xl shadow-2xl flex flex-col md:flex-row gap-6">
+                    <img src="https://placehold.co/200x150/374151/fca5a5?text=RUSH+HOUR" alt="" class="w-full md:w-1/3 h-auto object-cover rounded-lg">
+                    <div class="md:w-2/3">
+                        <h3 class="text-2xl font-bold text-rose-400 mb-2">Rush Hour (1998)</h3>
+                        <p class="text-gray-300 mb-2 font-medium">Peran: Chief Inspector Lee</p>
+                        <p class="text-sm text-gray-400">
+                            <span class="font-semibold text-rose-300">Tempat Kunci:</span> **Los Angeles dan New York, USA**. Film *crossover* Hollywood-nya yang paling sukses. Perannya adalah seorang inspektur Hong Kong yang harus beradaptasi dengan budaya Amerika sambil bekerja sama dengan detektif AS yang cerewet (Chris Tucker).
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Section 4: Kesan dan Pesan (Panjang) -->
+        <section id="kesan" class="py-16 bg-gray-800 rounded-xl shadow-2xl">
+            <h2 class="section-title text-4xl font-bold mb-12 text-center mx-auto">Kesan dan Pesan yang Mendalam</h2>
+            
+            <div class="max-w-4xl mx-auto text-center px-4 space-y-8">
+                <blockquote class="text-2xl italic text-gray-300 border-l-4 border-rose-400 pl-4">
+                    "Kesan abadi dari Jackie Chan adalah perpaduan yang mustahil antara keberanian yang hampir bunuh diri dengan kehangatan seorang pahlawan komedi. Ia tidak hanya mendefinisikan ulang genre aksi, tetapi juga menciptakan ikatan emosional dengan penonton melalui kerentanannya yang ditunjukkan di akhir setiap film."
+                </blockquote>
+                
+                <div class="text-left text-gray-300 leading-relaxed space-y-4">
+                    <p>
+                        **Kesan Mendalam:**
+                        Jackie Chan adalah anomali di dunia sinema. Di era film laga yang didominasi oleh kekerasan dan otot, ia menawarkan sesuatu yang berbeda: balet akrobatik, *timing* komedi yang sempurna, dan kejutan emosional. Bagian yang paling mengharukan adalah *blooper reel* di kredit akhir; bagian ini bukan hanya hiburan, tetapi sebuah kontrak keaslian dengan penonton. Ia menunjukkan setiap adegan berbahaya itu nyata, menyakitkan, dan ia melakukannya sendiri demi menghibur kita. Ini membangun tingkat kepercayaan yang tidak pernah bisa dicapai oleh bintang aksi lain. Ia menjual komitmen, bukan hanya kepahlawanan.
+                    </p>
+                    <p>
+                        **Pesan yang Dititipkan kepada Dunia:**
+                        Pesan Jackie Chan melampaui layar perak. Ia mengajarkan tentang dedikasi gila-gilaan pada keahlian (profesionalisme seni bela diri), namun disajikan dengan kerendahan hati dan humor. Ia membuktikan bahwa kegagalan dan kesalahan (yang ia tunjukkan di bloopers) adalah bagian dari proses menuju kesuksesan. Lebih dari itu, melalui Yayasan Amalnya, ia menegaskan bahwa kekuatan sejati seorang bintang bukanlah berapa banyak musuh yang bisa ia kalahkan, melainkan berapa banyak kehidupan yang bisa ia sentuh. Warisannya adalah cetak biru tentang bagaimana menjadi seniman yang bertanggung jawab, seorang *stuntman* yang inovatif, dan seorang dermawan yang tulus. Ia adalah pengingat bahwa bahkan aksi yang paling keras pun harus diakhiri dengan tawa dan belas kasih.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-700 mt-16">
+        <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-sm text-gray-400">&copy; 2025 Jackie Chan Portfolio Developer. Dibuat dengan dedikasi dan Tailwind CSS.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
+
+
